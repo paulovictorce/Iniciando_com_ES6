@@ -1,12 +1,14 @@
-var color = () => console.log("red");
-color();
+class Color {
+    constructor(codeColor, nameColor) {
+        this.codeColor = codeColor;
+        this.nameColor = nameColor;
+    };
 
-var bob = {
-    _name:"Bob",
-    _friends:["Guilherme","Fábio", "Cássio"],
-    printFriends: function printFriends() {
-        this._friends.forEach(f => console.log(this._name+" Knows "+f));
-    }
+    getColor() {
+        return {codeColor:this.codeColor, nameColor:this.nameColor};
+    };
 }
 
-bob.printFriends();
+let red = new Color("red","Red");
+
+console.log(red.getColor());
