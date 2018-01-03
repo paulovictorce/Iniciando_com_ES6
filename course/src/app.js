@@ -1,14 +1,9 @@
-class Color {
-    constructor(codeColor, nameColor) {
-        this.codeColor = codeColor;
-        this.nameColor = nameColor;
-    };
+let name = "Paulo";
+let age = 29;
+let stringTemplate = `
+    name: ${name}
+    age: ${age}
 
-    getColor() {
-        return {codeColor:this.codeColor, nameColor:this.nameColor};
-    };
-}
+`;
 
-let red = new Color("red","Red");
-
-console.log(red.getColor());
+console.log(stringTemplate);
