@@ -1,7 +1,9 @@
 "use strict";
 
-var name = "Paulo";
-var age = 29;
-var stringTemplate = "\n    name: " + name + "\n    age: " + age + "\n\n";
+function test(valueA) {
+    var valueB = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 4;
 
-console.log(stringTemplate);
+    return valueA + valueB;
+}
+
+console.log(test(5));

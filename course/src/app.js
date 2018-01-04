@@ -1,9 +1,5 @@
-let name = "Paulo";
-let age = 29;
-let stringTemplate = `
-    name: ${name}
-    age: ${age}
+function test (valueA, valueB = 4) {
+    return valueA + valueB;
+}
 
-`;
-
-console.log(stringTemplate);
+console.log(test(5));
