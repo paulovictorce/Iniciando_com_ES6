@@ -1,5 +1,5 @@
-function test (valueA, valueB = 4) {
-    return valueA + valueB;
-}
+var list = ["Teste", 29, {name: "Paulo", idade: 29}];
 
-console.log(test(5));
+for (let i of list) {
+    console.log(i);
+}
